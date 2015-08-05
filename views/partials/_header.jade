@@ -1,0 +1,63 @@
+header.header
+  .container
+    .row
+      .col-md-2
+        .header-logo
+          a(href="#")
+            img(src="assets/images/logo/logo.png")
+      .col-md-7
+        nav.navbar.navbar-default
+          .container-fluid
+            .navbar-header
+              button(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1", aria-expanded="false").navbar-toggle.collapsed
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              //-a.navbar-brand(href="#") Brand
+            .collapse.navbar-collapse#bs-example-navbar-collapse-1
+                ul.nav.navbar-nav
+                  li.active
+                    a(href="#") Главная
+                      span.sr-only (current)
+                  li
+                    a(href="#") Статьи
+                  li
+                    a(href="#") Форум
+                  li
+                    a(href="#") Роддома
+                  li
+                    a(href="#") Магазины
+      <!-- if nobody logged in use this default markup -->
+      .col-md-3
+        .header-actions
+          ul.header-actions_ul
+            li.header-actions_li
+              a(href="#") Вход
+            li.header-actions_li
+              a(href="#") 
+                i.fa.fa-vk
+            li.header-actions_li
+              a(href="#")
+                i.fa.fa-facebook
+      <!-- if somebody logged in use this custom markup -->
+      //- .col-md-3
+      //-   .header-userbox
+      //-     .header-userbox_n Долгополов Антон
+      //-     .header-userbox_icn
+      //-       img(src="assets/images/avatars/ava.png", alt="Avatar").img-circle
+      //-       span.header-userbox_hint 24
+      //-       ul.header-userbox_submenu
+      //-         li
+      //-           a(href="#")
+      //-             i.fa.fa-user
+      //-             профиль
+      //-         li
+      //-           a(href="#")
+      //-             i.fa.fa-envelope-o
+      //-             сообщения
+      //-             span.message-hint 24
+      //-         li
+      //-           a(href="#")
+      //-             i.fa.fa-sign-out
+      //-             выход

@@ -1,0 +1,55 @@
+/**
+* Top brands styles
+**/
+.top-brands {
+  background-color: #f1f1f5;
+  .top-brands_block {
+    .top-brands_t {
+      position: relative;
+      padding-top: 46px;
+      padding-bottom: 46px;
+      margin: 0;
+      font-size: 30px;
+      background: #f1f1f5;
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZWVmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOGU5ZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(left, #f1f1f5 0%, #e8e9ee 100%);
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f1f1f5), color-stop(100%,#e8e9ee));
+      background: -webkit-linear-gradient(left, #f1f1f5 0%,#e8e9ee 100%);
+      background: -o-linear-gradient(left, #f1f1f5 0%,#e8e9ee 100%);
+      background: -ms-linear-gradient(left, #f1f1f5 0%,#e8e9ee 100%);
+      background: linear-gradient(to right, #f1f1f5 0%,#e8e9ee 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f5', endColorstr='#e8e9ee',GradientType=1 );
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 0; height: 0;
+        border-left: 35px solid #e8e9ee;
+        border-top: 62.5px solid transparent;
+        border-bottom: 62.5px solid transparent;
+      }
+    }
+    .top-brands_ul {
+      width: calc(100% - 105px);
+      margin: 0;
+      padding: 53px 0 53px 20px;
+      list-style: none;
+      .top-brands_li {
+        display: inline-block;
+        margin-left: 28px;
+      }
+
+      .slick-prev {
+        top: 37.5px;
+        right: -58px;
+        left: auto;
+      }
+      .slick-next {
+        top: 37.5px;
+        right: -107px;
+        left: auto;
+      }
+    }
+  }
+}

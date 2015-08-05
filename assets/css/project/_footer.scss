@@ -1,0 +1,42 @@
+/**
+* Footer styles
+**/
+.footer {
+  background-color: $base-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 125px;
+  .footer-logo {
+    margin-top: 25px;
+  }
+  .footer-add {
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    a {
+      color: $light-color;
+      font-size: 18px;
+      margin-left: 45px;
+      padding-bottom: 5px;
+      border-bottom: 1px dashed $light-color;
+      span {
+        &:before {
+          content: url(../../../assets/images/footer/footer-add.png);
+          position: absolute;
+          left: 30px;
+          top: -13px;
+          width: 53px;
+          height: 54px;
+        }
+      }
+    }
+  }
+  .footer-links {
+    margin-top: 34px;
+    text-align: right;
+    a {
+      color: $light-color;
+      margin-left: 35px;
+    }
+  }
+}

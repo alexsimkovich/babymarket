@@ -1,0 +1,86 @@
+/**
+* Buttons restyling
+**/
+
+.btn-default {
+  display: inline-block;
+  width: 100%;
+  font-family: $font-beau-book;
+  font-size: 18px;
+  color: $light-color;
+  padding-left: 19px;
+  padding-right: 19px;
+  border: 1px solid $button-default-color;
+  background-color: $button-default-color;
+  @include border-radius(0px);
+  transition: all .25s linear;
+
+  &:hover,
+  &:focus {
+    background-color: $button-default-color-hovered;
+    border-color: $button-default-color-hovered;
+    color: $light-color;
+  }
+
+  &.__iconed {
+    i {
+      float: left;
+      margin-top: 4px;
+    }
+  }
+}
+
+.load-more-btn {
+  display: block;
+  height: 50px;
+  margin-bottom: 55px;
+  border: 1px solid $border-color;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  &:hover {
+    background-color: $button-default-color;
+    border: 1px solid $button-default-color;
+    color: $light-color;
+    .typing-indicator {
+      span {
+        background-color: $light-color;
+      }
+    }
+  }
+  .typing-indicator {
+    $ti-color-bg: #fff;
+    width: auto;
+    padding: 17px;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    animation: 2s bulge infinite ease-out;
+
+    span {
+      height: 15px;
+      width: 15px;
+      float: left;
+      margin: 0 1px;
+      background-color: $button-default-color;
+      display: block;
+      border-radius: 50%;
+      opacity: 0.4;
+      @for $i from 1 through 3 {
+        &:nth-of-type(#{$i}){
+          animation: 1s blink infinite ($i * .3333s);
+        }
+      }
+    }
+  }
+  @keyframes blink{
+    50% {
+      opacity: 1;
+    }
+  }
+  @keyframes bulge{
+    50% {
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+//global
+@import "global/fonts";
+@import "global/colors";
+@import "global/mixins";
+
+//base
+@import "base/bootstrap/bootstrap";
+@import "base/font-awesome/font-awesome";
+@import "base/slick/slick";
+@import "base/select2/select2";
+@import "base/starting";
+@import "base/typography";
+@import "base/navbar";
+@import "base/buttons";
+@import "base/controls";
+@import "base/scroll";
+@import "base/animate";
+
+//project
+@import "project/header";
+@import "project/search";
+@import "project/carousel";
+@import "project/range-slider";
+@import "project/product";
+@import "project/top-brands";
+@import "project/footer";
+@import "project/icons";

@@ -1,0 +1,31 @@
+/**
+* Starting styles here
+**/
+*,
+*:before,
+*:after {
+  outline: 0;
+}
+body {
+  font-family: $font-beau-reg;
+  font-size: 14px;
+  color: $base-color;
+  background-color: $background-default-color;
+}
+a {
+  text-decoration: none;
+  transition: all .25s linear;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $button-default-color;
+    text-decoration: none;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}

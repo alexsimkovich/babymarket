@@ -1,0 +1,186 @@
+/**
+* Icons styles
+**/
+
+.icon-pram {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/pram.png);
+    position: absolute;
+    left: 4.5px;
+    top: 6px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/pram_h.png);
+    }
+  }
+}
+.icon-armchair {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/armchair.png);
+    position: absolute;
+    left: 7px;
+    top: 6px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/armchair_h.png);
+    }
+  }
+}
+.icon-bed {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/bed.png);
+    position: absolute;
+    left: 7px;
+    top: 8px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/bed_h.png);
+    }
+  }
+}
+.icon-bicycle {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/bicycle.png);
+    position: absolute;
+    left: 5px;
+    top: 9px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/bicycle_h.png);
+    }
+  }
+}
+.icon-chair-for-babies {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/chair-for-babies.png);
+    position: absolute;
+    left: 10px;
+    top: 6px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/chair-for-babies_h.png);
+    }
+  }
+}
+.icon-commode {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/commode.png);
+    position: absolute;
+    left: 8px;
+    top: 9.5px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/commode_h.png);
+    }
+  }
+}
+.icon-complect-furniture {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/complect-furniture.png);
+    position: absolute;
+    left: 4px;
+    top: 8px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/complect-furniture_h.png);
+    }
+  }
+}
+.icon-cupboard {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/cupboard.png);
+    position: absolute;
+    left: 8px;
+    top: 8px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/cupboard_h.png);
+    }
+  }
+}
+.icon-linens {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/linens.png);
+    position: absolute;
+    left: 6px;
+    top: 7px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/linens_h.png);
+    }
+  }
+}
+.icon-manege {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/manege.png);
+    position: absolute;
+    left: 6.5px;
+    top: 6px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/manege_h.png);
+    }
+  }
+}
+.icon-play-furniture {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/play-furniture.png);
+    position: absolute;
+    left: 5px;
+    top: 8px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/play-furniture_h.png);
+    }
+  }
+}
+.icon-sled {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/sled.png);
+    position: absolute;
+    left: 6.5px;
+    top: 9px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/sled_h.png);
+    }
+  }
+}
+.icon-swaddling-board {
+  position: relative;
+  &:before {
+    content: url(../../../assets/images/icons/swaddling-board.png);
+    position: absolute;
+    left: 6px;
+    top: 7px;
+  }
+  &:hover,&.hovered {
+    &:before {
+      content: url(../../../assets/images/icons/swaddling-board_h.png);
+    }
+  }
+}

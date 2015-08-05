@@ -1,0 +1,84 @@
+/**
+* Carousel styles
+**/
+.carousel-block {
+  padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    right: auto;
+    padding: 0;
+    text-shadow: none;
+    text-align: left;
+    .carousel-caption_t {
+      margin-bottom: 25px;
+      font-size: 36px;
+      line-height: 42px;
+      color: $base-color;
+      text-transform: uppercase;
+      span {
+        color: $brand-color;
+        font-weight: bold;
+      }
+    }
+    .carousel-caption_slogan {
+      font-family: $font-beau-light;
+      font-size: 24px;
+      line-height: 28px;
+      color: #aab5c8;
+    }
+  }
+  .carousel-price {
+    position: absolute;
+    left: -8px;
+    bottom: 64px;
+    width: 280px;
+    height: 90px;
+    font-family: $font-beau-bold;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    color: $light-color;
+    background: url(../../../assets/images/carousel/ribbon.png) left top no-repeat;
+    //background: #c6db5d;
+    //background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M2ZGI1ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiMWQ5YTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    //background: -moz-linear-gradient(left,  #c6db5d 0%, #b1d9a2 100%);
+    //background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c6db5d), color-stop(100%,#b1d9a2));
+    //background: -webkit-linear-gradient(left,  #c6db5d 0%,#b1d9a2 100%);
+    //background: -o-linear-gradient(left,  #c6db5d 0%,#b1d9a2 100%);
+    //background: -ms-linear-gradient(left,  #c6db5d 0%,#b1d9a2 100%);
+    //background: linear-gradient(to right,  #c6db5d 0%,#b1d9a2 100%);
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6db5d', endColorstr='#b1d9a2',GradientType=1 );
+    text-shadow: 1px 2px 3px $button-default-color;
+    span {
+      font-size: 36px;
+      font-weight: bold;
+    }
+  }
+  .carousel-indicators {
+    bottom: 25px;
+    left: 25px;
+    margin: 0;
+    min-width: 20px;
+    width: auto;
+    li {
+      vertical-align: middle;
+      background-color: #a0acc0;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #a0acc0;
+      margin: 0 5px;
+      &.active {
+        width: 11px;
+        height: 11px;
+        margin: 0 5px;
+        border: 2px solid #a0acc0;
+        @include border-radius(50%);
+      }
+    }
+  }
+}
