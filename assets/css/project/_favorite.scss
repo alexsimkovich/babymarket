@@ -1,0 +1,135 @@
+/**
+* Favorite styles
+**/
+.favorite-item {
+  display: table;
+  height: 272px;
+  margin-bottom: 28px;
+}
+.favorite-img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 272px;
+  text-align: center;
+
+  //height: 272px;
+}
+.favorite-info {
+  position: relative;
+  padding: 28px;
+  height: 272px;
+  background-color: $background-default-color;
+  border: 1px solid $border-color;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 31px;
+    right: 100%;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-right: 13px solid $background-default-color;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-right: 14px solid $border-color;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+  }
+  .favorite-name {
+    margin: 0 0 10px;
+    line-height: 1;
+    a {
+      font-size: 18px;
+      line-height: 1;
+      color: $link-color;
+    }
+    &:hover {
+      a {
+        color: $button-default-color;
+      }
+    }
+  }
+  .favorite-price {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    font-size: 18px;
+    color: $base-color;
+    span {
+      font-size: 14px;
+    }
+  }
+  .favorite-cat {
+    margin-bottom: 10px;
+    color: $link-color;
+  }
+  .favorite-raiting {
+    margin-bottom: 20px;
+    i {
+      font-size: 16px;
+      margin: 1px;
+      &.fa-star {
+        color: #e4e5eb;
+      }
+      &.selected {
+        color: #fba72d;
+      }
+    }
+    span {
+      margin-left: 10px;
+      color: #1c64a1;
+    }
+  }
+  .favorite-age {
+    margin-bottom: 18px;
+    span {
+      font-weight: bold;
+    }
+  }
+  .favorite-panel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    a {
+      display: inline-block;
+      margin: 0 -0.5px;
+      width: 23%;
+      padding: 12px;
+      font-size: 13px;
+      color: $link-color;
+      text-align: center;
+      border-right: 1px solid $border-color;
+      border-top: 1px solid $border-color;
+      &:hover {
+        color: $button-default-color;
+      }
+      &.delete {
+        position: relative;
+        border-left: 1px solid $border-color;
+        width: calc(31% + 4px);
+        background-color: #f1f1f5;
+        text-indent: 16px;
+        .icon-trash {
+          &:before {
+            content: url(../../../assets/images/icons/icon-trash.png);
+            position: absolute;
+            left: -8px;
+            top: 10px;
+          }
+        }
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}

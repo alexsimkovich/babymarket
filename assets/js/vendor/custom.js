@@ -1,44 +1,15 @@
 $(function() {
   $(document).on("click", "#toggler", function(ev) {
     ev.preventDefault();
+    ev.stopPropagation();
     $(this).closest(".search-block").next(".search-toggle").slideToggle();
   });
   /**
    * Main carousel initialization
    **/
   $('.carousel').carousel({
-      interval: 5000
-    })
-    /**
-     * Range slider initialization
-     **/
-  var slider = document.getElementById('range');
-  noUiSlider.create(slider, {
-    start: [20, 80], // Handle start position
-    step: 10, // Slider moves in increments of '10'
-    margin: 10, // Handles must be more than '20' apart
-    connect: true, // Display a colored bar between the handles
-    behaviour: 'tap-drag', // Move handle on tap, bar is draggable
-    range: { // Slider can select '0' to '100'
-      'min': 0,
-      'max': 100
-    },
-    pips: { // Show a scale with the slider
-      mode: 'steps',
-      density: 2
-    }
-  });
-  /**
-   * Select2 initialization
-   **/
-  $(".custom-select").select2({
-    placeholder: "Выберите город",
-    allowClear: true
-  }).on("select2:open", function() {
-    $(".select2-results").mCustomScrollbar({
-      theme: "dark-2"
-    });
-  });
+    interval: 5000
+  });  
   /**
    * Userbox submenu
    **/
@@ -126,10 +97,10 @@ $(function() {
     $(this).append("<div class='typing-indicator'><span></span><span></span><span></span></div>");
   });
   $(".search-toggle_item").hover(
-    function(){
+    function() {
       $(this).find("span").addClass("hovered");
     },
-    function(){
+    function() {
       $(this).find("span").removeClass("hovered");
     }
   );

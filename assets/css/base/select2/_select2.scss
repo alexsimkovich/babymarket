@@ -85,23 +85,16 @@
 }
 .select2-results__option {
   position: relative;
-  padding: 10px 15px 10px 43px;
+  padding: 10px 15px 10px 28px;
   font-size: 14px;
   color: $link-color;
   user-select: none;
   -webkit-user-select: none;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid #f3f4f7;
   &:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 25px;
+    content: url("../../../assets/images/icons/select-arrow.png");
     margin-top: -5px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid $link-color;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
+    margin-right: 9px;
   }
 }
 .select2-results__option[aria-selected] {
@@ -203,16 +196,22 @@
   width: 20px;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-  border-color: $button-default-color transparent transparent transparent;
-  border-style: solid;
-  border-width: 9px 5.5px 0 5.5px;
-  height: 0;
-  left: 50%;
-  margin-left: -4px;
-  margin-top: -4px;
-  position: absolute;
-  top: 50%;
-  width: 0;
+  background: url("../../../assets/images/icons/selected-arrow_down.png") no-repeat right top;
+  width: 11px;
+  height: 9px;
+  float: right;
+  margin-top: 7px;
+  margin-right: 5px;
+  //border-color: $button-default-color transparent transparent transparent;
+  //border-style: solid;
+  //border-width: 9px 5.5px 0 5.5px;
+  //height: 0;
+  //left: 50%;
+  //margin-left: -4px;
+  //margin-top: -6px;
+  //position: absolute;
+  //top: 50%;
+  //width: 0;
 }
 .select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear {
   float: left;
@@ -335,9 +334,9 @@
   background-color: $light-color;
   color: $button-default-color;
   &:before {
-    border-left: 8px solid $button-default-color;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
+    content: url("../../../assets/images/icons/select-arrow_active.png");
+    margin-top: -5px;
+    margin-right: 9px;
   }
 }
 .select2-container--default .select2-results__option .select2-results__option {
@@ -370,9 +369,9 @@
   background-color: $light-color;
   color: $button-default-color;
   &:before {
-    border-left: 8px solid $button-default-color;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
+    content: url("../../../assets/images/icons/select-arrow_active.png");
+    margin-top: -5px;
+    margin-right: 9px;
   }
 }
 .select2-container--default .select2-results__group {

@@ -1,0 +1,35 @@
+/**
+* Breadcrumb styles
+**/
+.breadcrumb {
+  padding: 28px 0;
+  margin: 0;
+  background-color: transparent;
+  border-bottom: 1px solid $border-color;
+  &>li {
+    &>a {
+      color: $base-color;
+    }
+    &:before {
+      content: url("../../../assets/images/slick/arr-right.png");
+      position: relative;
+      top: 2px;
+      padding-left: 10px;
+    }
+    &:first-child:before {
+      content: "";
+      padding: 0;
+    }
+    + li {
+      &::before {
+        content: url("../../../assets/images/slick/arr-right.png");
+        position: relative;
+        top: 2px;
+        padding-left: 10px;
+      }
+    }
+    &.active {
+      color: $base-color-light;
+    }
+  }
+}

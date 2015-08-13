@@ -1,0 +1,37 @@
+/**
+* Pagiation Styles
+**/
+
+.pagination {
+  margin: 0 0 28px;
+  @include border-radius(0);
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  @include border-radius(0);
+}
+.pagination > li > a,
+.pagination > li > span {
+  padding: 8px 14px;
+  color: $base-color-light;
+  border: 1px solid $border-color;
+}
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > li > span:hover,
+.pagination > li > span:focus {
+  color: #6b7586;
+  background-color: $border-color;
+}
+.pagination > li:first-child > a:hover,
+.pagination > li:first-child > span:hover,
+.pagination > li:last-child > a:hover,
+.pagination > li:last-child > span:hover,
+.pagination > li:first-child > a:focus,
+.pagination > li:first-child > span:focus,
+.pagination > li:last-child > a:focus,
+.pagination > li:last-child > span:focus {
+  background-color: transparent;
+}

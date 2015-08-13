@@ -10102,8 +10102,8 @@ button.close {
   font-style: normal;
 }
 /* Arrows */
-.slick-prev,
-.slick-next {
+.prev-btn,
+.next-btn {
   position: absolute;
   display: block;
   height: 50px;
@@ -10117,20 +10117,22 @@ button.close {
   top: -78px;
   padding: 0;
   outline: none;
+  transition: all 0.2s linear;
 }
-.slick-prev:hover, .slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
+.prev-btn:hover, .prev-btn:focus,
+.next-btn:hover,
+.next-btn:focus {
+  border: 1px solid #94caf9;
   outline: none;
   color: transparent;
 }
-.slick-prev:hover:before, .slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before {
+.prev-btn:hover:before, .prev-btn:focus:before,
+.next-btn:hover:before,
+.next-btn:focus:before {
   opacity: 1;
 }
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
+.prev-btn.slick-disabled:before,
+.next-btn.slick-disabled:before {
   opacity: 0.25;
 }
 
@@ -10141,9 +10143,26 @@ button.close {
   opacity: 0.75;
 }
 
-.slick-prev {
-  background: url("../../../../assets/images/slick/arr-left.png") no-repeat 50% 50%;
+.prev-btn {
   left: 15px;
+}
+.prev-btn:hover .slick-prev, .prev-btn:focus .slick-prev {
+  background: url("../../../../assets/images/slick/arr_sprite.png") no-repeat -2px -2px;
+}
+
+.next-btn {
+  left: 64px;
+}
+.next-btn:hover .slick-next, .next-btn:focus .slick-next {
+  background: url("../../../../assets/images/slick/arr_sprite.png") no-repeat -33px -2px;
+}
+
+.slick-prev {
+  background: url("../../../../assets/images/slick/arr_sprite.png") no-repeat -15px -2px;
+  width: 11px;
+  height: 15px;
+  border: none;
+  margin-top: 16px;
 }
 [dir="rtl"] .slick-prev {
   left: auto;
@@ -10155,14 +10174,13 @@ button.close {
 [dir="rtl"] .slick-prev:before {
   content: "тЖТ";
 }
-.slick-prev:hover, .slick-prev:focus {
-  background: url("../../../../assets/images/slick/arr-left_h.png") no-repeat 50% 50%;
-  border: 1px solid #94caf9;
-}
 
 .slick-next {
-  background: url("../../../../assets/images/slick/arr-right.png") no-repeat 50% 50%;
-  left: 64px;
+  background: url("../../../../assets/images/slick/arr_sprite.png") no-repeat -46px -2px;
+  width: 11px;
+  height: 15px;
+  border: none;
+  margin-top: 16px;
 }
 [dir="rtl"] .slick-next {
   left: -25px;
@@ -10173,10 +10191,6 @@ button.close {
 }
 [dir="rtl"] .slick-next:before {
   content: "тЖР";
-}
-.slick-next:hover, .slick-next:focus {
-  background: url("../../../../assets/images/slick/arr-right_h.png") no-repeat 50% 50%;
-  border: 1px solid #94caf9;
 }
 
 /* Dots */
@@ -10338,24 +10352,17 @@ button.close {
 
 .select2-results__option {
   position: relative;
-  padding: 10px 15px 10px 43px;
+  padding: 10px 15px 10px 28px;
   font-size: 14px;
   color: #1c64a1;
   user-select: none;
   -webkit-user-select: none;
-  border-top: 1px solid #d6dbe4;
+  border-top: 1px solid #f3f4f7;
 }
 .select2-results__option:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 25px;
+  content: url("../../../assets/images/icons/select-arrow.png");
   margin-top: -5px;
-  width: 0;
-  height: 0;
-  border-left: 8px solid #1c64a1;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
+  margin-right: 9px;
 }
 
 .select2-results__option[aria-selected] {
@@ -10472,16 +10479,12 @@ button.close {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-  border-color: #94caf9 transparent transparent transparent;
-  border-style: solid;
-  border-width: 9px 5.5px 0 5.5px;
-  height: 0;
-  left: 50%;
-  margin-left: -4px;
-  margin-top: -4px;
-  position: absolute;
-  top: 50%;
-  width: 0;
+  background: url("../../../assets/images/icons/selected-arrow_down.png") no-repeat right top;
+  width: 11px;
+  height: 9px;
+  float: right;
+  margin-top: 7px;
+  margin-right: 5px;
 }
 
 .select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear {
@@ -10625,9 +10628,9 @@ button.close {
   color: #94caf9;
 }
 .select2-container--default .select2-results__option[aria-selected=true]:before {
-  border-left: 8px solid #94caf9;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
+  content: url("../../../assets/images/icons/select-arrow_active.png");
+  margin-top: -5px;
+  margin-right: 9px;
 }
 
 .select2-container--default .select2-results__option .select2-results__option {
@@ -10668,9 +10671,9 @@ button.close {
   color: #94caf9;
 }
 .select2-container--default .select2-results__option--highlighted[aria-selected]:before {
-  border-left: 8px solid #94caf9;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
+  content: url("../../../assets/images/icons/select-arrow_active.png");
+  margin-top: -5px;
+  margin-right: 9px;
 }
 
 .select2-container--default .select2-results__group {
@@ -10959,10 +10962,17 @@ a:hover, a:focus {
 * Typography styles
 **/
 .h2 {
-  margin-top: 28px;
-  margin-bottom: 28px;
+  margin-top: 39px;
+  margin-bottom: 39px;
   font-size: 30px;
   line-height: 30px;
+}
+
+.h3 {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 /**
@@ -10986,7 +10996,7 @@ a:hover, a:focus {
   font-family: "BeauSansPro-Light";
   color: #fff;
   transition: all .25s linear;
-  padding: 22px 0 23px;
+  padding: 24px 0 21px;
   margin-left: 35px;
   margin-right: 35px;
 }
@@ -11008,6 +11018,7 @@ a:hover, a:focus {
 .btn-default {
   display: inline-block;
   width: 100%;
+  height: 39px;
   font-family: "BeauSansPro-Book";
   font-size: 18px;
   color: #fff;
@@ -11021,7 +11032,7 @@ a:hover, a:focus {
   border-radius: 0px;
   transition: all .25s linear;
 }
-.btn-default:hover, .btn-default:focus {
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default:active:hover, .btn-default:active:focus {
   background-color: #79baf2;
   border-color: #79baf2;
   color: #fff;
@@ -11152,6 +11163,10 @@ label.css-label {
   user-select: none;
 }
 
+.input-group-addon, .input-group-btn {
+  width: 13%;
+}
+
 /*
 ------------------------------------------------------------------------------------------------------------------------
 1. BASIC STYLE
@@ -11243,9 +11258,9 @@ y-axis
 .mCSB_scrollTools .mCSB_draggerContainer {
   /* contains the draggable element and dragger rail markup */
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
-  bottom: 0;
+  bottom: 10px;
   right: 0;
   height: auto;
 }
@@ -15667,6 +15682,85 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 /**
+* Breadcrumb styles
+**/
+.breadcrumb {
+  padding: 28px 0;
+  margin: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #d6dbe4;
+}
+.breadcrumb > li > a {
+  color: #333c4e;
+}
+.breadcrumb > li:before {
+  content: url("../../../assets/images/slick/arr-right.png");
+  position: relative;
+  top: 2px;
+  padding-left: 10px;
+}
+.breadcrumb > li:first-child:before {
+  content: "";
+  padding: 0;
+}
+.breadcrumb > li + li::before {
+  content: url("../../../assets/images/slick/arr-right.png");
+  position: relative;
+  top: 2px;
+  padding-left: 10px;
+}
+.breadcrumb > li.active {
+  color: #a0acc0;
+}
+
+/**
+* Pagiation Styles
+**/
+.pagination {
+  margin: 0 0 28px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  padding: 8px 14px;
+  color: #a0acc0;
+  border: 1px solid #d6dbe4;
+}
+
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > li > span:hover,
+.pagination > li > span:focus {
+  color: #6b7586;
+  background-color: #d6dbe4;
+}
+
+.pagination > li:first-child > a:hover,
+.pagination > li:first-child > span:hover,
+.pagination > li:last-child > a:hover,
+.pagination > li:last-child > span:hover,
+.pagination > li:first-child > a:focus,
+.pagination > li:first-child > span:focus,
+.pagination > li:last-child > a:focus,
+.pagination > li:last-child > span:focus {
+  background-color: transparent;
+}
+
+/**
 * Header styles
 **/
 .header {
@@ -15821,6 +15915,7 @@ Copyright (c) 2015 Daniel Eden
   padding-top: 32px;
   padding-bottom: 17px;
   border-bottom: 1px solid #d6dbe4;
+  background-color: #fff;
 }
 .search .search-block:after {
   content: "";
@@ -16038,7 +16133,7 @@ Copyright (c) 2015 Daniel Eden
     width: 11px;
     height: 11px;
     margin: 0 5px;
-    border: 2px solid #a0acc0;
+    box-shadow: inset 0 0 0 1px #a0acc0;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -16061,7 +16156,8 @@ Copyright (c) 2015 Daniel Eden
   color: #333c4e;
 }
 .range-slider .range-slider_block .range-hint {
-  text-align: center;
+  margin-top: 50px;
+  text-align: right;
   font-style: italic;
   color: #a0acc0;
 }
@@ -16284,6 +16380,7 @@ Copyright (c) 2015 Daniel Eden
  *
  */
 .noUi-value {
+  opacity: 0;
   width: 40px;
   position: absolute;
   text-align: center;
@@ -16374,6 +16471,21 @@ Copyright (c) 2015 Daniel Eden
   width: 15px;
 }
 
+.tip {
+  display: block;
+  position: absolute;
+  top: 36px;
+  padding: 5px;
+  left: -9px;
+  text-align: center;
+  min-width: 90px;
+}
+
+.tip strong {
+  display: block;
+  padding: 2px;
+}
+
 /**
 * Products styles
 **/
@@ -16400,11 +16512,12 @@ Copyright (c) 2015 Daniel Eden
 }
 .product .product-block .product-block_ul .product-block_li .item-body {
   position: relative;
-  padding: 24px;
+  padding: 24px 24px 20px 24px;
   background-color: #f9f9fb;
   border: 1px solid #d6dbe4;
 }
 .product .product-block .product-block_ul .product-block_li .item-body .item-icn {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 33px;
@@ -16423,11 +16536,14 @@ Copyright (c) 2015 Daniel Eden
   width: calc(100% - 47px);
 }
 .product .product-block .product-block_ul .product-block_li .item-body .item-info .item-name {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 8px;
+}
+.product .product-block .product-block_ul .product-block_li .item-body .item-info .item-price {
+  margin-top: 13px;
 }
 .product .product-block .product-block_ul .product-block_li .item-body .item-info .item-price span {
   font-size: 18px;
+  line-height: 18px;
 }
 .product .product-block .product-block_ul .product-block_li .item-body .item-info .item-raiting {
   margin-top: 17px;
@@ -16474,6 +16590,11 @@ Copyright (c) 2015 Daniel Eden
 .product .product-block .product-block_ul .product-block_li:hover .item-body {
   background-color: #fff;
 }
+.product .product-block .product-block_ul .product-block_li:hover .item-body:before {
+  border-bottom: 13px solid #fff;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+}
 
 /**
 * Top brands styles
@@ -16483,6 +16604,7 @@ Copyright (c) 2015 Daniel Eden
 }
 .top-brands .top-brands_block .top-brands_t {
   position: relative;
+  width: calc(100% - 34px);
   padding-top: 46px;
   padding-bottom: 46px;
   margin: 0;
@@ -16518,14 +16640,14 @@ Copyright (c) 2015 Daniel Eden
   display: inline-block;
   margin-left: 28px;
 }
-.top-brands .top-brands_block .top-brands_ul .slick-prev {
-  top: 37.5px;
-  right: -58px;
-  left: auto;
-}
-.top-brands .top-brands_block .top-brands_ul .slick-next {
+.top-brands .top-brands_block .top-brands_ul .next-btn {
   top: 37.5px;
   right: -107px;
+  left: auto;
+}
+.top-brands .top-brands_block .top-brands_ul .prev-btn {
+  top: 37.5px;
+  right: -58px;
   left: auto;
 }
 
@@ -16547,19 +16669,28 @@ Copyright (c) 2015 Daniel Eden
   text-align: center;
 }
 .footer .footer-add a {
+  display: block;
   color: #fff;
   font-size: 18px;
   margin-left: 45px;
   padding-bottom: 5px;
+}
+.footer .footer-add a span.text {
   border-bottom: 1px dashed #fff;
 }
-.footer .footer-add a span:before {
-  content: url(../../../assets/images/footer/footer-add.png);
+.footer .footer-add a span.plus {
+  background: url("../../../assets/images/footer/footer-add_sprite.png") no-repeat -1px -63px;
+  width: 53px;
+  height: 54px;
   position: absolute;
   left: 30px;
   top: -13px;
-  width: 53px;
-  height: 54px;
+}
+.footer .footer-add a:hover span.text {
+  border-bottom: none;
+}
+.footer .footer-add a:hover span.plus {
+  background: url("../../../assets/images/footer/footer-add_sprite.png") no-repeat -1px -2px;
 }
 .footer .footer-links {
   margin-top: 34px;
@@ -16569,12 +16700,16 @@ Copyright (c) 2015 Daniel Eden
   color: #fff;
   margin-left: 35px;
 }
+.footer .footer-links a:hover, .footer .footer-links a:focus {
+  color: #94caf9;
+}
 
 /**
 * Icons styles
 **/
 .icon-pram {
   position: relative;
+  display: block;
 }
 .icon-pram:before {
   content: url(../../../assets/images/icons/pram.png);
@@ -16588,6 +16723,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-armchair {
   position: relative;
+  display: block;
 }
 .icon-armchair:before {
   content: url(../../../assets/images/icons/armchair.png);
@@ -16601,6 +16737,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-bed {
   position: relative;
+  display: block;
 }
 .icon-bed:before {
   content: url(../../../assets/images/icons/bed.png);
@@ -16614,6 +16751,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-bicycle {
   position: relative;
+  display: block;
 }
 .icon-bicycle:before {
   content: url(../../../assets/images/icons/bicycle.png);
@@ -16627,6 +16765,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-chair-for-babies {
   position: relative;
+  display: block;
 }
 .icon-chair-for-babies:before {
   content: url(../../../assets/images/icons/chair-for-babies.png);
@@ -16640,6 +16779,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-commode {
   position: relative;
+  display: block;
 }
 .icon-commode:before {
   content: url(../../../assets/images/icons/commode.png);
@@ -16653,6 +16793,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-complect-furniture {
   position: relative;
+  display: block;
 }
 .icon-complect-furniture:before {
   content: url(../../../assets/images/icons/complect-furniture.png);
@@ -16666,6 +16807,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-cupboard {
   position: relative;
+  display: block;
 }
 .icon-cupboard:before {
   content: url(../../../assets/images/icons/cupboard.png);
@@ -16679,6 +16821,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-linens {
   position: relative;
+  display: block;
 }
 .icon-linens:before {
   content: url(../../../assets/images/icons/linens.png);
@@ -16692,6 +16835,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-manege {
   position: relative;
+  display: block;
 }
 .icon-manege:before {
   content: url(../../../assets/images/icons/manege.png);
@@ -16705,6 +16849,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-play-furniture {
   position: relative;
+  display: block;
 }
 .icon-play-furniture:before {
   content: url(../../../assets/images/icons/play-furniture.png);
@@ -16718,6 +16863,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-sled {
   position: relative;
+  display: block;
 }
 .icon-sled:before {
   content: url(../../../assets/images/icons/sled.png);
@@ -16731,6 +16877,7 @@ Copyright (c) 2015 Daniel Eden
 
 .icon-swaddling-board {
   position: relative;
+  display: block;
 }
 .icon-swaddling-board:before {
   content: url(../../../assets/images/icons/swaddling-board.png);
@@ -16740,6 +16887,184 @@ Copyright (c) 2015 Daniel Eden
 }
 .icon-swaddling-board:hover:before, .icon-swaddling-board.hovered:before {
   content: url(../../../assets/images/icons/swaddling-board_h.png);
+}
+
+.icon-map-marker {
+  position: relative;
+}
+.icon-map-marker:before {
+  content: url(../../../assets/images/icons/map-marker.png);
+  padding-right: 4px;
+}
+
+/**
+* Favorite styles
+**/
+.favorite-item {
+  display: table;
+  height: 272px;
+  margin-bottom: 28px;
+}
+
+.favorite-img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 272px;
+  text-align: center;
+}
+
+.favorite-info {
+  position: relative;
+  padding: 28px;
+  height: 272px;
+  background-color: #f9f9fb;
+  border: 1px solid #d6dbe4;
+}
+.favorite-info:before {
+  content: '';
+  position: absolute;
+  top: 31px;
+  right: 100%;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-right: 13px solid #f9f9fb;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+.favorite-info:after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 100%;
+  width: 0;
+  height: 0;
+  border-right: 14px solid #d6dbe4;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+}
+.favorite-info .favorite-name {
+  margin: 0 0 10px;
+  line-height: 1;
+}
+.favorite-info .favorite-name a {
+  font-size: 18px;
+  line-height: 1;
+  color: #1c64a1;
+}
+.favorite-info .favorite-name:hover a {
+  color: #94caf9;
+}
+.favorite-info .favorite-price {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  font-size: 18px;
+  color: #333c4e;
+}
+.favorite-info .favorite-price span {
+  font-size: 14px;
+}
+.favorite-info .favorite-cat {
+  margin-bottom: 10px;
+  color: #1c64a1;
+}
+.favorite-info .favorite-raiting {
+  margin-bottom: 20px;
+}
+.favorite-info .favorite-raiting i {
+  font-size: 16px;
+  margin: 1px;
+}
+.favorite-info .favorite-raiting i.fa-star {
+  color: #e4e5eb;
+}
+.favorite-info .favorite-raiting i.selected {
+  color: #fba72d;
+}
+.favorite-info .favorite-raiting span {
+  margin-left: 10px;
+  color: #1c64a1;
+}
+.favorite-info .favorite-age {
+  margin-bottom: 18px;
+}
+.favorite-info .favorite-age span {
+  font-weight: bold;
+}
+.favorite-info .favorite-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.favorite-info .favorite-panel a {
+  display: inline-block;
+  margin: 0 -0.5px;
+  width: 23%;
+  padding: 12px;
+  font-size: 13px;
+  color: #1c64a1;
+  text-align: center;
+  border-right: 1px solid #d6dbe4;
+  border-top: 1px solid #d6dbe4;
+}
+.favorite-info .favorite-panel a:hover {
+  color: #94caf9;
+}
+.favorite-info .favorite-panel a.delete {
+  position: relative;
+  border-left: 1px solid #d6dbe4;
+  width: calc(31% + 4px);
+  background-color: #f1f1f5;
+  text-indent: 16px;
+}
+.favorite-info .favorite-panel a.delete .icon-trash:before {
+  content: url(../../../assets/images/icons/icon-trash.png);
+  position: absolute;
+  left: -8px;
+  top: 10px;
+}
+.favorite-info .favorite-panel a:last-child {
+  border-right: none;
+}
+
+/**
+* Latest seen items styles
+**/
+.latest {
+  padding-bottom: 28px;
+  background: #f1f1f5 url(../../../assets/images/shadow/shadow.png) repeat-x left top;
+}
+
+.latest-list {
+  padding: 0;
+  list-style: none;
+}
+.latest-list .latest-item .latest-item_img {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  text-align: center;
+}
+.latest-list .latest-item .latest-item_img img {
+  max-width: 100%;
+}
+.latest-list .latest-item .latest-item_info {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 90px;
+  padding: 15px 20px;
+  width: calc(100% - 90px);
+  margin-left: -4px;
+  border: 1px solid #d6dbe4;
+}
+.latest-list .latest-item .latest-item_info .latest-item_t {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 4px;
 }
 
 /*# sourceMappingURL=main.css.map */

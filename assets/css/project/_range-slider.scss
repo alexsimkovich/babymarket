@@ -12,7 +12,8 @@
       color: $base-color;
     }
     .range-hint {
-      text-align: center;
+      margin-top: 50px;
+      text-align: right;
       font-style: italic;
       color: $base-color-light;
     }
@@ -96,6 +97,11 @@
   height: 20px;
   left: -10px;
   top: -6px;
+  //&:first-child {
+  //  &>div {
+  //    display: none;
+  //  }
+  //}
 }
 .noUi-vertical {
   width: 18px;
@@ -216,6 +222,7 @@
  *
  */
 .noUi-value {
+  opacity: 0;
   width: 40px;
   position: absolute;
   text-align: center;
@@ -292,4 +299,17 @@
 }
 .noUi-marker-vertical.noUi-marker-large {
   width: 15px;
+}
+.tip {
+  display: block;
+  position: absolute;
+  top: 36px;
+  padding: 5px;
+  left: -9px;
+  text-align: center;
+  min-width: 90px;
+}
+.tip strong {
+  display: block;
+  padding: 2px;
 }

@@ -8,3 +8,68 @@ block body
   include partials/_product-carousel
   include partials/_top-brands
   include partials/_popular
+  include partials/_footer
+  include partials/_global-scripts
+  script(src="assets/js/vendor/nouislider.js")
+  script
+    $(function(){
+      /**
+       * Range slider initialization
+       **/
+      var slider = document.getElementById('range');
+      noUiSlider.create(slider, {
+        start: [0, 5], // Handle start position
+        //step: 10, // Slider moves in increments of '10'
+        //margin: 10, // Handles must be more than '20' apart
+        connect: true, // Display a colored bar between the handles
+        behaviour: 'tap-drag', // Move handle on tap, bar is draggable
+        range: { // Slider can select '0' to '100'
+          'min': 0,
+          'max': 5
+        },
+        pips: {
+          mode: 'values',
+          values: [0, 5],
+          density: 4,
+          stepped: true
+        }
+      });
+      var tipHandles = slider.getElementsByClassName('noUi-handle'),
+        tooltips = [];
+
+      // Add divs to the slider handles.
+      for (var i = 0; i < tipHandles.length; i++) {
+        tooltips[i] = document.createElement('div');
+        tipHandles[i].appendChild(tooltips[i]);
+      }
+
+      // Add a class for styling
+      tooltips[0].className += 'tip';
+      tooltips[1].className += 'tip';
+      // Add additional markup
+      tooltips[0].innerHTML = '<span></span>';
+      tooltips[1].innerHTML = '<span></span>';
+      // Replace the tooltip reference with the span we just added
+      tooltips[0] = tooltips[0].getElementsByTagName('span')[0];
+      tooltips[1] = tooltips[1].getElementsByTagName('span')[0];
+
+      // When the slider changes, write the value to the tooltips.
+      slider.noUiSlider.on('update', function(values, handle) {
+        tooltips[handle].innerHTML = Math.round(values[handle]) + ' Недель';
+      });
+      /**
+       * Select2 initialization
+       **/
+      $(".custom-select").select2({
+        placeholder: "Выберите город",
+        allowClear: true
+      }).on("select2:open", function() {
+        $(".select2-results").mCustomScrollbar({
+          theme: "dark-2"
+        });
+      });
+    });
+  script(src="assets/js/vendor/select2.js")
+  script(src="assets/js/vendor/i18n/ru.js")
+  script(src="assets/js/vendor/jquery.mCustomScrollbar.js")
+  script(src="assets/js/vendor/slick.js")

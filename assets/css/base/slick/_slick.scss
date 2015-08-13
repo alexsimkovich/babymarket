@@ -138,8 +138,11 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 /* Arrows */
-.slick-prev,
-.slick-next {
+.prev-btn,
+.next-btn {
+
+  //.slick-prev,
+  //.slick-next
   position: absolute;
   display: block;
   height: 50px;
@@ -153,8 +156,10 @@ $slick-opacity-not-active: 0.25 !default;
   top: -78px;
   padding: 0;
   outline: none;
+  transition: all 0.2s linear;
   &:hover,
   &:focus {
+    border: 1px solid $button-default-color;
     outline: none;
     color: transparent;
     &:before {
@@ -174,9 +179,30 @@ $slick-opacity-not-active: 0.25 !default;
   //-webkit-font-smoothing: antialiased;
   //-moz-osx-font-smoothing: grayscale;
 }
-.slick-prev {
-  background: url("../../../../assets/images/slick/arr-left.png") no-repeat 50% 50%;
+.prev-btn {
   left: 15px;
+  &:hover,
+  &:focus {
+    .slick-prev {
+      background: url("../../../../assets/images/slick/arr_sprite.png") no-repeat -2px -2px;
+    }
+  }
+}
+.next-btn {
+  left: 64px;
+  &:hover,
+  &:focus {
+    .slick-next {
+      background: url("../../../../assets/images/slick/arr_sprite.png") no-repeat -33px -2px;
+    }
+  }
+}
+.slick-prev {
+  background: url("../../../../assets/images/slick/arr_sprite.png") no-repeat -15px -2px;
+  width: 11px;
+  height: 15px;
+  border: none;
+  margin-top: 16px;
   [dir="rtl"] & {
     left: auto;
     right: -25px;
@@ -187,15 +213,13 @@ $slick-opacity-not-active: 0.25 !default;
       content: $slick-next-character;
     }
   }
-  &:hover,
-  &:focus {
-    background: url("../../../../assets/images/slick/arr-left_h.png") no-repeat 50% 50%;
-    border: 1px solid $button-default-color;
-  }
 }
 .slick-next {
-  background: url("../../../../assets/images/slick/arr-right.png") no-repeat 50% 50%;
-  left: 64px;
+  background: url("../../../../assets/images/slick/arr_sprite.png") no-repeat -46px -2px;
+  width: 11px;
+  height: 15px;
+  border: none;
+  margin-top: 16px;
   [dir="rtl"] & {
     left: -25px;
     right: auto;
@@ -205,11 +229,6 @@ $slick-opacity-not-active: 0.25 !default;
     [dir="rtl"] & {
       content: $slick-prev-character;
     }
-  }
-  &:hover,
-  &:focus {
-    background: url("../../../../assets/images/slick/arr-right_h.png") no-repeat 50% 50%;
-    border: 1px solid $button-default-color;
   }
 }
 

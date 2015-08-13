@@ -193,10 +193,11 @@
               </div>
               <div class="col-md-6">
                 <div id="range"></div>
+                <div class="range-hint">* Мы покажем товары в каталоге подходящие по возрасту вашему ребенку</div>
               </div>
               <div class="col-md-3">
                 <div class="city-block">
-                  <div class="city-block_label"><i class="fa fa-map-marker"></i>Вы из города</div>
+                  <div class="city-block_label"><span class="icon-map-marker"></span>Вы из города</div>
                   <select class="custom-select form-control">
                     <option>Можайск</option>
                     <option>Можга</option>
@@ -221,9 +222,6 @@
                   </select>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-12 range-hint">* Мы покажем товары в каталоге подходящие по возрасту вашему ребенку</div>
             </div>
           </form>
         </div>
@@ -452,7 +450,7 @@
             <div class="footer-logo"><a href="#" title="Babymarket logo"><img src="assets/images/logo/logo.png" alt="Babymarket logo"></a></div>
           </div>
           <div class="col-md-4">
-            <div class="footer-add"><a href="#" title="Добавить магазин в каталог"> <span></span>Добавить магазин в каталог</a></div>
+            <div class="footer-add"><a href="#" title="Добавить магазин в каталог"> <span class="plus"></span><span class="text">Добавить магазин в каталог</span></a></div>
           </div>
           <div class="col-md-4">
             <div class="footer-links"><a href="#" title="О проекте">О проекте</a><a href="#" title="Обратная связь">Обратная связь</a></div>
@@ -468,5 +466,69 @@
     <script src="assets/js/vendor/jquery.mCustomScrollbar.js"></script>
     <script src="assets/js/vendor/slick.js"></script>
     <script src="assets/js/vendor/custom.js"></script>
+    <script src="assets/js/vendor/nouislider.js"></script>
+    <script>
+      $(function(){
+        /**
+         * Range slider initialization
+         **/
+        var slider = document.getElementById('range');
+        noUiSlider.create(slider, {
+          start: [0, 5], // Handle start position
+          //step: 10, // Slider moves in increments of '10'
+          //margin: 10, // Handles must be more than '20' apart
+          connect: true, // Display a colored bar between the handles
+          behaviour: 'tap-drag', // Move handle on tap, bar is draggable
+          range: { // Slider can select '0' to '100'
+            'min': 0,
+            'max': 5
+          },
+          pips: {
+            mode: 'values',
+            values: [0, 5],
+            density: 4,
+            stepped: true
+          }
+        });
+        var tipHandles = slider.getElementsByClassName('noUi-handle'),
+          tooltips = [];
+          
+        // Add divs to the slider handles.
+        for (var i = 0; i < tipHandles.length; i++) {
+          tooltips[i] = document.createElement('div');
+          tipHandles[i].appendChild(tooltips[i]);
+        }
+        
+        // Add a class for styling
+        tooltips[0].className += 'tip';
+        tooltips[1].className += 'tip';
+        // Add additional markup
+        tooltips[0].innerHTML = '<span></span>';
+        tooltips[1].innerHTML = '<span></span>';
+        // Replace the tooltip reference with the span we just added
+        tooltips[0] = tooltips[0].getElementsByTagName('span')[0];
+        tooltips[1] = tooltips[1].getElementsByTagName('span')[0];
+        
+        // When the slider changes, write the value to the tooltips.
+        slider.noUiSlider.on('update', function(values, handle) {
+          tooltips[handle].innerHTML = Math.round(values[handle]) + ' Недель';
+        });
+        /**
+         * Select2 initialization
+         **/
+        $(".custom-select").select2({
+          placeholder: "Выберите город",
+          allowClear: true
+        }).on("select2:open", function() {
+          $(".select2-results").mCustomScrollbar({
+            theme: "dark-2"
+          });
+        });
+      });
+    </script>
+    <script src="assets/js/vendor/select2.js"></script>
+    <script src="assets/js/vendor/i18n/ru.js"></script>
+    <script src="assets/js/vendor/jquery.mCustomScrollbar.js"></script>
+    <script src="assets/js/vendor/slick.js"></script>
   </body>
 </html>

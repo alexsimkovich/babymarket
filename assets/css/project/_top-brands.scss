@@ -6,6 +6,7 @@
   .top-brands_block {
     .top-brands_t {
       position: relative;
+      width: calc(100% - 34px);
       padding-top: 46px;
       padding-bottom: 46px;
       margin: 0;
@@ -24,7 +25,8 @@
         position: absolute;
         top: 0;
         left: 100%;
-        width: 0; height: 0;
+        width: 0;
+        height: 0;
         border-left: 35px solid #e8e9ee;
         border-top: 62.5px solid transparent;
         border-bottom: 62.5px solid transparent;
@@ -39,15 +41,14 @@
         display: inline-block;
         margin-left: 28px;
       }
-
-      .slick-prev {
-        top: 37.5px;
-        right: -58px;
-        left: auto;
-      }
-      .slick-next {
+      .next-btn {
         top: 37.5px;
         right: -107px;
+        left: auto;
+      }
+      .prev-btn {
+        top: 37.5px;
+        right: -58px;
         left: auto;
       }
     }

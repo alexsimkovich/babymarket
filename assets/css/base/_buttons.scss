@@ -5,6 +5,7 @@
 .btn-default {
   display: inline-block;
   width: 100%;
+  height: 39px;
   font-family: $font-beau-book;
   font-size: 18px;
   color: $light-color;
@@ -16,7 +17,10 @@
   transition: all .25s linear;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active,
+  &:active:hover,
+  &:active:focus {
     background-color: $button-default-color-hovered;
     border-color: $button-default-color-hovered;
     color: $light-color;
