@@ -1,0 +1,42 @@
+extend partials/_layout
+block head
+  title Baby - Регистрация
+
+block body
+  section.registration
+    .container
+      h2.h2 Регистрация на сайте
+      hr.hr-bordered
+      form.form-horizontal
+        .form-group
+          label.col-md-2.control-label Имя
+          .col-md-6
+            input(type="text").form-control
+          .col-md-4.placeholders Напишите как вас зовут
+        .form-group
+          label.col-md-2.control-label Логин(e-mail)
+          .col-md-6
+            input(type="email").form-control
+          .col-md-4.placeholders Логином будет ваш e-mail. Например anna@mail.com
+        .form-group
+          label.col-md-2.control-label Пароль
+          .col-md-6
+            input(type="email").form-control
+          .col-md-4.placeholders Минимум 7 символов
+        .form-group
+          label.col-md-2.control-label Пароль повторно
+          .col-md-6
+            input(type="email").form-control.error-control
+          .col-md-4.placeholders.with-errors Пароли не совпадают. Проверьте правильность ввода.
+        .form-group
+          label.col-md-2.control-label Зарегистрироваться через социальную сеть
+          .col-md-6
+            .register-social
+              a.vk(href="#")
+              a.fb(href="#")
+              a.tw(href="#")
+        .form-group
+          .col-md-9.col-md-offset-2
+            input(type="submit", value="Зарегистрироваться").btn.btn-default
+            a(href="#").register-cancel Отменить регистрацию
+              

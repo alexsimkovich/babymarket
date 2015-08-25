@@ -6,11 +6,23 @@
 *:after {
   outline: 0;
 }
+html, body {
+  height: 100%;
+}
 body {
   font-family: $font-beau-reg;
   font-size: 14px;
   color: $base-color;
   background-color: $background-default-color;
+}
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -125px;
+  &:after {
+    content: "";
+    display: block;
+    height: 125px;
+  }
 }
 a {
   text-decoration: none;

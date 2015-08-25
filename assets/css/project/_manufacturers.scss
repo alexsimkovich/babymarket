@@ -1,0 +1,63 @@
+/**
+* Manufacturers styles
+**/
+.manufacturers-links {
+  margin-top: 10px;
+  a {
+    margin-right: 30px;
+  }
+}
+
+.manufacturers-filter {
+  margin-bottom: 28px;
+  border: 1px solid $border-color;
+}
+.filter_ul {
+  @include ul-not-list();
+  li {
+    display: inline-block;
+    margin: 0 -2px;
+    a {
+      position: relative;
+      display: block;
+      padding: 14px 14.2px 12px 14.2px;
+      font-size: 17px;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:after {
+        content: "\2022";
+        position: absolute;
+        right: 0;
+        color: $border-color;
+      }
+    }
+    &.lng {
+      border-right: 1px solid $border-color;
+      a {
+        &:after {
+          content: "";
+        }
+      }
+    }
+    &:last-child {
+      a {
+        &:after {
+          content: "";
+        }
+      }
+    }
+  }
+}
+.manufacturers-box {
+  margin-bottom: 60px;
+  padding-left: 14px;
+  padding-right: 14px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.manufacturers-item {
+  margin-bottom: 30px;
+}

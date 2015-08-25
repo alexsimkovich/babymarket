@@ -3,7 +3,7 @@
 **/
 .latest {
   padding-bottom: 28px;
-  background: #f1f1f5 url(../../../assets/images/shadow/shadow.png) repeat-x left top;
+  background: #f1f1f5 url("../../../assets/images/shadow/shadow.png") repeat-x left top;
 }
 .latest-list {
   padding: 0;
@@ -28,6 +28,29 @@
       width: calc(100% - 90px);
       margin-left: -4px;
       border: 1px solid $border-color;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 31px;
+        right: 100%;
+        z-index: 1;
+        width: 0;
+        height: 0;
+        border-right: 13px solid #f1f1f5;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        right: 100%;
+        width: 0;
+        height: 0;
+        border-right: 14px solid #d6dbe4;
+        border-top: 13px solid transparent;
+        border-bottom: 13px solid transparent;
+      }
       .latest-item_t {
         font-size: 16px;
         line-height: 18px;

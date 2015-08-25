@@ -1,0 +1,15 @@
+/**
+* Some additional visual styles
+**/
+
+.hr-bordered {
+  margin-top: 0;
+  margin-bottom: 28px;
+  border-top: 1px solid $border-color;
+}
+.column-bordered {
+  border-right: 1px solid $border-color;
+  &:last-child {
+    border: none;
+  }
+}

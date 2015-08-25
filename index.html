@@ -9,440 +9,506 @@
     <link href="assets/css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="header-logo"><a href="#"><img src="assets/images/logo/logo.png"></a></div>
-          </div>
-          <div class="col-md-7">
-            <nav class="navbar navbar-default">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                  <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                </div>
-                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Главная<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">Форум</a></li>
-                    <li><a href="#">Роддома</a></li>
-                    <li><a href="#">Магазины</a></li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div><!-- if nobody logged in use this default markup -->
-          <div class="col-md-3">
-            <div class="header-actions">
-              <ul class="header-actions_ul">
-                <li class="header-actions_li"><a href="#">Вход</a></li>
-                <li class="header-actions_li"><a href="#"> <i class="fa fa-vk"></i></a></li>
-                <li class="header-actions_li"><a href="#"><i class="fa fa-facebook"></i></a></li>
-              </ul>
-            </div>
-          </div><!-- if somebody logged in use this custom markup -->
-        </div>
-      </div>
-    </header>
-    <section class="search">
-      <div class="search-block">
+    <div class="wrapper">
+      <header class="header">
         <div class="container">
           <div class="row">
-            <div class="col-md-3"><a href="#" id="toggler" class="btn btn-default __iconed"><i class="fa fa-reorder"></i>Каталог товаров</a></div><!-- default search markup full width--><!-- if someone set aside a goods use this markup-->
+            <div class="col-md-2">
+              <div class="header-logo"><a href="#"><img src="assets/images/logo/logo.png"></a></div>
+            </div>
             <div class="col-md-7">
-              <form class="form-horizontal">
-                <div class="form-group has-feedback">
-                  <div class="col-xs-12">
-                    <div class="input-group">
-                      <input type="text" placeholder="Например, Aprica Magical Air" class="form-control __search-control"><span class="input-group-btn">
-                        <button type="button" class="btn btn-default">Поиск</button></span>
-                    </div><span class="glyphicon glyphicon-search form-control-feedback"></span>
+              <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                  </div>
+                  <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Главная<span class="sr-only">(current)</span></a></li>
+                      <li><a href="#">Статьи</a></li>
+                      <li><a href="#">Форум</a></li>
+                      <li><a href="#">Роддома</a></li>
+                      <li><a href="#">Магазины</a></li>
+                    </ul>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="col-md-2"><a href="#" title="Отложенный товар" class="set-aside">
-                <div class="set-aside_label">Отложено</div>
-                <div class="set-aside_cnt">17</div></a></div>
+              </nav>
+            </div><!-- if nobody logged in use this default markup -->
+            <div class="col-md-3">
+              <div class="header-actions">
+                <ul class="header-actions_ul">
+                  <li class="header-actions_li"><a href="#">Вход</a></li>
+                  <li class="header-actions_li"><a href="#"> <i class="fa fa-vk"></i></a></li>
+                  <li class="header-actions_li"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+              </div>
+            </div><!-- if somebody logged in use this custom markup -->
           </div>
         </div>
-      </div>
-      <div class="search-toggle">
+      </header>
+      <section class="search">
+        <div class="search-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3"><a href="#" id="toggler" class="btn btn-default btn-block __iconed"><i class="fa fa-reorder"></i>Каталог товаров</a></div><!-- default search markup full width--><!-- if someone set aside a goods use this markup-->
+              <div class="col-md-7">
+                <form class="form-horizontal">
+                  <div class="form-group has-feedback">
+                    <div class="col-xs-12">
+                      <div class="input-group">
+                        <input type="text" placeholder="Например, Aprica Magical Air" class="form-control __search-control"><span class="input-group-btn">
+                          <button type="button" class="btn btn-default">Поиск</button></span>
+                      </div><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-2"><a href="#" title="Отложенный товар" class="set-aside">
+                  <div class="set-aside_label">Отложено</div>
+                  <div class="set-aside_cnt">17</div></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="search-toggle">
+          <div class="container">
+            <div class="search-toggle_t">Каталог товаров</div>
+            <div class="search-toggle_list">
+              <div class="search-toggle_box">
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-pram"></span></div>
+                    <div class="item_n">Коляски</div></a></div>
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-bed"></span></div>
+                    <div class="item_n">Кроватки</div></a></div>
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-commode"></span></div>
+                    <div class="item_n">Детские комоды</div></a></div>
+              </div>
+              <div class="search-toggle_box">
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-pram"></span></div>
+                    <div class="item_n">Матрасы</div></a></div>
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-chair-for-babies"></span></div>
+                    <div class="item_n">Стульчики для кормления</div></a></div>
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-swaddling-board"></span></div>
+                    <div class="item_n">Пеленальные доски</div></a></div>
+              </div>
+              <div class="search-toggle_box">
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-linens"></span></div>
+                    <div class="item_n">Постельное белье</div></a></div>
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-armchair"></span></div>
+                    <div class="item_n">Детские автокресла</div></a></div>
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-cupboard"></span></div>
+                    <div class="item_n">Детские шкафы</div></a></div>
+              </div>
+              <div class="search-toggle_box">
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-manege"></span></div>
+                    <div class="item_n">Манежи</div></a></div>
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-play-furniture"></span></div>
+                    <div class="item_n">Игровая мебель</div></a></div>
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-complect-furniture"></span></div>
+                    <div class="item_n">Комплекты мебели</div></a></div>
+              </div>
+              <div class="search-toggle_box">
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-bicycle"></span></div>
+                    <div class="item_n">Велосипеды</div></a></div>
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-sled"></span></div>
+                    <div class="item_n">Санки</div></a></div>
+                <div class="search-toggle_item"><a href="#" title="">
+                    <div class="item_icn"><span class="icon-pram"></span></div>
+                    <div class="item_n">Электромобили</div></a></div>
+              </div>
+            </div>
+            <div class="search-toggle_t">Производители</div>
+            <div class="search-toogle_ul">
+              <li><a href="#">Adamex</a></li>
+              <li><a href="#">Aprica</a></li>
+              <li><a href="#">CAM</a></li>
+              <li><a href="#">Camarelo</a></li>
+              <li><a href="#">Adamex</a></li>
+              <li><a href="#">Aprica</a></li>
+              <li><a href="#">CAM</a></li>
+              <li><a href="#">Camarelo</a></li>
+              <li><a href="#">Adamex</a></li>
+              <li><a href="#">Aprica</a></li>
+              <li><a href="#">CAM</a></li>
+              <li><a href="#">Camarelo</a></li>
+              <li><a href="#">Adamex   </a></li>
+              <li><a href="#">Aprica</a></li>
+              <li><a href="#">CAM</a></li>
+              <li><a href="#">Camarelo</a></li>
+            </div><a href="#">Показать всех производителей</a>
+          </div>
+        </div>
+      </section>
+      <section class="carousel-block">
         <div class="container">
-          <div class="search-toggle_t">Каталог товаров</div>
-          <div class="search-toggle_list">
-            <div class="search-toggle_box">
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-pram"></span></div>
-                  <div class="item_n">Коляски</div></a></div>
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-bed"></span></div>
-                  <div class="item_n">Кроватки</div></a></div>
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-commode"></span></div>
-                  <div class="item_n">Детские комоды</div></a></div>
-            </div>
-            <div class="search-toggle_box">
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-pram"></span></div>
-                  <div class="item_n">Матрасы</div></a></div>
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-chair-for-babies"></span></div>
-                  <div class="item_n">Стульчики для кормления</div></a></div>
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-swaddling-board"></span></div>
-                  <div class="item_n">Пеленальные доски</div></a></div>
-            </div>
-            <div class="search-toggle_box">
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-linens"></span></div>
-                  <div class="item_n">Постельное белье</div></a></div>
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-armchair"></span></div>
-                  <div class="item_n">Детские автокресла</div></a></div>
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-cupboard"></span></div>
-                  <div class="item_n">Детские шкафы</div></a></div>
-            </div>
-            <div class="search-toggle_box">
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-manege"></span></div>
-                  <div class="item_n">Манежи</div></a></div>
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-play-furniture"></span></div>
-                  <div class="item_n">Игровая мебель</div></a></div>
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-complect-furniture"></span></div>
-                  <div class="item_n">Комплекты мебели</div></a></div>
-            </div>
-            <div class="search-toggle_box">
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-bicycle"></span></div>
-                  <div class="item_n">Велосипеды</div></a></div>
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-sled"></span></div>
-                  <div class="item_n">Санки</div></a></div>
-              <div class="search-toggle_item"><a href="#" title="">
-                  <div class="item_icn"><span class="icon-pram"></span></div>
-                  <div class="item_n">Электромобили</div></a></div>
+          <div id="carousel-example-generic" data-ride="carousel" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol><!-- Wrapper for slides -->
+            <div role="listbox" class="carousel-inner">
+              <div class="item active"><a href="#" title="Детска коляска Lonex"><img src="assets/images/carousel/slide1.jpg" alt="">
+                  <div class="carousel-caption">
+                    <div class="carousel-caption_t">Детские коляски<br><span>LONEX</span></div>
+                    <div class="carousel-caption_slogan">Комфорт и надежная защита<br>для вашего малыша</div>
+                  </div>
+                  <div class="carousel-price">от <span>12 000 Р</span></div></a></div>
+              <div class="item"><a href="#" title="Детска коляска Lonex"><img src="assets/images/carousel/slide1.jpg" alt="">
+                  <div class="carousel-caption">
+                    <div class="carousel-caption_t">Детские коляски<br><span>LONEX</span></div>
+                    <div class="carousel-caption_slogan">Комфорт и надежная защита<br>для вашего малыша</div>
+                  </div>
+                  <div class="carousel-price">от <span>12 000 Р</span></div></a></div>
+              <div class="item"><a href="#" title="Детска коляска Lonex"><img src="assets/images/carousel/slide1.jpg" alt="">
+                  <div class="carousel-caption">
+                    <div class="carousel-caption_t">Детские коляски<br><span>LONEX</span></div>
+                    <div class="carousel-caption_slogan">Комфорт и надежная защита<br>для вашего малыша</div>
+                  </div>
+                  <div class="carousel-price">от <span>12 000 Р</span></div></a></div>
             </div>
           </div>
-          <div class="search-toggle_t">Производители</div>
-          <div class="search-toogle_ul">
-            <li><a href="#">Adamex</a></li>
-            <li><a href="#">Aprica</a></li>
-            <li><a href="#">CAM</a></li>
-            <li><a href="#">Camarelo</a></li>
-            <li><a href="#">Adamex</a></li>
-            <li><a href="#">Aprica</a></li>
-            <li><a href="#">CAM</a></li>
-            <li><a href="#">Camarelo</a></li>
-            <li><a href="#">Adamex</a></li>
-            <li><a href="#">Aprica</a></li>
-            <li><a href="#">CAM</a></li>
-            <li><a href="#">Camarelo</a></li>
-            <li><a href="#">Adamex   </a></li>
-            <li><a href="#">Aprica</a></li>
-            <li><a href="#">CAM</a></li>
-            <li><a href="#">Camarelo</a></li>
-          </div><a href="#">Показать всех производителей</a>
         </div>
-      </div>
-    </section>
-    <section class="carousel-block">
-      <div class="container">
-        <div id="carousel-example-generic" data-ride="carousel" class="carousel slide">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol><!-- Wrapper for slides -->
-          <div role="listbox" class="carousel-inner">
-            <div class="item active"><a href="#" title="Детска коляска Lonex"><img src="assets/images/carousel/slide1.jpg" alt="">
-                <div class="carousel-caption">
-                  <div class="carousel-caption_t">Детские коляски<br><span>LONEX</span></div>
-                  <div class="carousel-caption_slogan">Комфорт и надежная защита<br>для вашего малыша</div>
+      </section>
+      <section class="range-slider">
+        <div class="container">
+          <div class="range-slider_block">
+            <form class="form-range-slider">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="range-slider_t">Сколько вашему малышу?</div>
+                  <input type="checkbox" name="years" id="years" class="css-checkbox">
+                  <label for="years" class="css-label">Не учитывать возраст ребенка</label>
                 </div>
-                <div class="carousel-price">от <span>12 000 Р</span></div></a></div>
-            <div class="item"><a href="#" title="Детска коляска Lonex"><img src="assets/images/carousel/slide1.jpg" alt="">
-                <div class="carousel-caption">
-                  <div class="carousel-caption_t">Детские коляски<br><span>LONEX</span></div>
-                  <div class="carousel-caption_slogan">Комфорт и надежная защита<br>для вашего малыша</div>
+                <div class="col-md-6">
+                  <div id="range"></div>
+                  <div class="range-hint">* Мы покажем товары в каталоге подходящие по возрасту вашему ребенку</div>
                 </div>
-                <div class="carousel-price">от <span>12 000 Р</span></div></a></div>
-            <div class="item"><a href="#" title="Детска коляска Lonex"><img src="assets/images/carousel/slide1.jpg" alt="">
-                <div class="carousel-caption">
-                  <div class="carousel-caption_t">Детские коляски<br><span>LONEX</span></div>
-                  <div class="carousel-caption_slogan">Комфорт и надежная защита<br>для вашего малыша</div>
+                <div class="col-md-3">
+                  <div class="city-block">
+                    <div class="city-block_label"><span class="icon-map-marker"></span>Вы из города</div>
+                    <select class="custom-select form-control">
+                      <option>Можайск</option>
+                      <option>Можга</option>
+                      <option>Моздок</option>
+                      <option>Монино</option>
+                      <option>Мончегорск</option>
+                      <option>Морозовск</option>
+                      <option>Моршанск</option>
+                      <option>Москва</option>
+                      <option>Московский</option>
+                      <option>Мостовской</option>
+                      <option>Можайск</option>
+                      <option>Можга</option>
+                      <option>Моздок</option>
+                      <option>Монино</option>
+                      <option>Мончегорск</option>
+                      <option>Морозовск</option>
+                      <option>Моршанск</option>
+                      <option>Москва</option>
+                      <option>Московский</option>
+                      <option>Мостовской</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="carousel-price">от <span>12 000 Р</span></div></a></div>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="range-slider">
-      <div class="container">
-        <div class="range-slider_block">
-          <form class="form-range-slider">
+      </section>
+      <section class="product">
+        <div class="container">
+          <div class="product-block">
+            <h2 class="product-block_t">Для выписки из роддома</h2>
+            <div class="product-block_ul row __roddom">
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-icn"><span class="icon-pram"></span></div>
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-icn"><span class="icon-pram"></span></div>
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-icn"><span class="icon-pram"></span></div>
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-icn"><span class="icon-pram"></span></div>
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-icn"><span class="icon-pram"></span></div>
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-icn"><span class="icon-pram"></span></div>
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-icn"><span class="icon-pram"></span></div>
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-icn"><span class="icon-pram"></span></div>
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="top-brands">
+        <div class="container">
+          <div class="top-brands_block">
             <div class="row">
               <div class="col-md-3">
-                <div class="range-slider_t">Сколько вашему малышу?</div>
-                <input type="checkbox" name="years" id="years" class="css-checkbox">
-                <label for="years" class="css-label">Не учитывать возраст ребенка</label>
+                <h2 class="top-brands_t">Топовые бренды</h2>
               </div>
-              <div class="col-md-6">
-                <div id="range"></div>
-                <div class="range-hint">* Мы покажем товары в каталоге подходящие по возрасту вашему ребенку</div>
-              </div>
-              <div class="col-md-3">
-                <div class="city-block">
-                  <div class="city-block_label"><span class="icon-map-marker"></span>Вы из города</div>
-                  <select class="custom-select form-control">
-                    <option>Можайск</option>
-                    <option>Можга</option>
-                    <option>Моздок</option>
-                    <option>Монино</option>
-                    <option>Мончегорск</option>
-                    <option>Морозовск</option>
-                    <option>Моршанск</option>
-                    <option>Москва</option>
-                    <option>Московский</option>
-                    <option>Мостовской</option>
-                    <option>Можайск</option>
-                    <option>Можга</option>
-                    <option>Моздок</option>
-                    <option>Монино</option>
-                    <option>Мончегорск</option>
-                    <option>Морозовск</option>
-                    <option>Моршанск</option>
-                    <option>Москва</option>
-                    <option>Московский</option>
-                    <option>Мостовской</option>
-                  </select>
-                </div>
+              <div class="col-md-9">
+                <ul class="top-brands_ul">
+                  <li class="top-brands_li"><a href="#" title="Adamex">Adamex</a></li>
+                  <li class="top-brands_li"><a href="#" title="Aprica">Aprica</a></li>
+                  <li class="top-brands_li"><a href="#" title="CAM">CAM</a></li>
+                  <li class="top-brands_li"><a href="#" title="Camarelo">Camarelo</a></li>
+                  <li class="top-brands_li"><a href="#" title="Capella">Capella</a></li>
+                  <li class="top-brands_li"><a href="#" title="Geoby">Geoby</a></li>
+                  <li class="top-brands_li"><a href="#" title="Inglesina">Inglesina</a></li>
+                  <li class="top-brands_li"><a href="#" title="Maclaren">Maclaren</a></li>
+                  <li class="top-brands_li"><a href="#" title="Peg-Perego">Peg-Perego </a></li>
+                  <li class="top-brands_li"><a href="#" title="Teutonia">Teutonia</a></li>
+                  <li class="top-brands_li"><a href="#" title="Adamex">Adamex</a></li>
+                  <li class="top-brands_li"><a href="#" title="Aprica">Aprica</a></li>
+                  <li class="top-brands_li"><a href="#" title="CAM">CAM</a></li>
+                  <li class="top-brands_li"><a href="#" title="Camarelo">Camarelo</a></li>
+                  <li class="top-brands_li"><a href="#" title="Capella">Capella</a></li>
+                  <li class="top-brands_li"><a href="#" title="Geoby">Geoby</a></li>
+                  <li class="top-brands_li"><a href="#" title="Inglesina">Inglesina</a></li>
+                  <li class="top-brands_li"><a href="#" title="Maclaren">Maclaren</a></li>
+                  <li class="top-brands_li"><a href="#" title="Peg-Perego">Peg-Perego </a></li>
+                  <li class="top-brands_li"><a href="#" title="Teutonia">Teutonia</a></li>
+                </ul>
               </div>
             </div>
-          </form>
-        </div>
-      </div>
-    </section>
-    <section class="product">
-      <div class="container">
-        <div class="product-block">
-          <h2 class="product-block_t">Для выписки из роддома</h2>
-          <div class="product-block_ul row __roddom">
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-icn"><span class="icon-pram"></span></div>
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-icn"><span class="icon-pram"></span></div>
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-icn"><span class="icon-pram"></span></div>
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-icn"><span class="icon-pram"></span></div>
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-icn"><span class="icon-pram"></span></div>
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-icn"><span class="icon-pram"></span></div>
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-icn"><span class="icon-pram"></span></div>
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-icn"><span class="icon-pram"></span></div>
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="top-brands">
-      <div class="container">
-        <div class="top-brands_block">
-          <div class="row">
-            <div class="col-md-3">
-              <h2 class="top-brands_t">Топовые бренды</h2>
+      </section>
+      <section class="product">
+        <div class="container">
+          <div class="product-block">
+            <h2 class="h2">Популярные товары</h2>
+            <div class="product-block_ul row">
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-block_li col-md-3">
+                <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
+                <div class="item-body">
+                  <div class="item-info">
+                    <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
+                    <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
+                    <div class="item-price">от <span>5609 </span>руб.</div>
+                  </div>
+                </div>
+              </li>
             </div>
-            <div class="col-md-9">
-              <ul class="top-brands_ul">
-                <li class="top-brands_li"><a href="#" title="Adamex">Adamex</a></li>
-                <li class="top-brands_li"><a href="#" title="Aprica">Aprica</a></li>
-                <li class="top-brands_li"><a href="#" title="CAM">CAM</a></li>
-                <li class="top-brands_li"><a href="#" title="Camarelo">Camarelo</a></li>
-                <li class="top-brands_li"><a href="#" title="Capella">Capella</a></li>
-                <li class="top-brands_li"><a href="#" title="Geoby">Geoby</a></li>
-                <li class="top-brands_li"><a href="#" title="Inglesina">Inglesina</a></li>
-                <li class="top-brands_li"><a href="#" title="Maclaren">Maclaren</a></li>
-                <li class="top-brands_li"><a href="#" title="Peg-Perego">Peg-Perego </a></li>
-                <li class="top-brands_li"><a href="#" title="Teutonia">Teutonia</a></li>
-                <li class="top-brands_li"><a href="#" title="Adamex">Adamex</a></li>
-                <li class="top-brands_li"><a href="#" title="Aprica">Aprica</a></li>
-                <li class="top-brands_li"><a href="#" title="CAM">CAM</a></li>
-                <li class="top-brands_li"><a href="#" title="Camarelo">Camarelo</a></li>
-                <li class="top-brands_li"><a href="#" title="Capella">Capella</a></li>
-                <li class="top-brands_li"><a href="#" title="Geoby">Geoby</a></li>
-                <li class="top-brands_li"><a href="#" title="Inglesina">Inglesina</a></li>
-                <li class="top-brands_li"><a href="#" title="Maclaren">Maclaren</a></li>
-                <li class="top-brands_li"><a href="#" title="Peg-Perego">Peg-Perego </a></li>
-                <li class="top-brands_li"><a href="#" title="Teutonia">Teutonia</a></li>
-              </ul>
+            <div class="row">
+              <div class="col-md-6 col-md-pull-3 col-md-push-3"><a href="#" id="more-products" class="load-more-btn">Показать еще на этой странице</a></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="product">
-      <div class="container">
-        <div class="product-block">
-          <h2 class="h2">Популярные товары</h2>
-          <div class="product-block_ul row">
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-            <li class="product-block_li col-md-3">
-              <div class="item-header"><a href="#"><img src="assets/images/products/item1.png" alt=""></a></div>
-              <div class="item-body">
-                <div class="item-info">
-                  <div class="item-name"><a href="#">Peg-Perego Pliko Mini</a></div>
-                  <div class="item-raiting"><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star selected"></i><i class="fa fa-star"></i><span>6,9 из 10</span></div>
-                  <div class="item-price">от <span>5609 </span>руб.</div>
-                </div>
-              </div>
-            </li>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-md-pull-3 col-md-push-3"><a href="#" id="more-products" class="load-more-btn">Показать еще на этой странице</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+      <script src="assets/js/vendor/nouislider.js"></script>
+      <script>
+        $(function(){
+          /**
+           * Range slider initialization
+           **/
+          var slider = document.getElementById('range');
+          noUiSlider.create(slider, {
+            start: [0, 5], // Handle start position
+            //step: 10, // Slider moves in increments of '10'
+            //margin: 10, // Handles must be more than '20' apart
+            connect: true, // Display a colored bar between the handles
+            behaviour: 'tap-drag', // Move handle on tap, bar is draggable
+            range: { // Slider can select '0' to '100'
+              'min': 0,
+              'max': 5
+            },
+            pips: {
+              mode: 'values',
+              values: [0, 5],
+              density: 4,
+              stepped: true
+            }
+          });
+          var tipHandles = slider.getElementsByClassName('noUi-handle'),
+            tooltips = [];
+            
+          // Add divs to the slider handles.
+          for (var i = 0; i < tipHandles.length; i++) {
+            tooltips[i] = document.createElement('div');
+            tipHandles[i].appendChild(tooltips[i]);
+          }
+          
+          // Add a class for styling
+          tooltips[0].className += 'tip';
+          tooltips[1].className += 'tip';
+          // Add additional markup
+          tooltips[0].innerHTML = '<span></span>';
+          tooltips[1].innerHTML = '<span></span>';
+          // Replace the tooltip reference with the span we just added
+          tooltips[0] = tooltips[0].getElementsByTagName('span')[0];
+          tooltips[1] = tooltips[1].getElementsByTagName('span')[0];
+          
+          // When the slider changes, write the value to the tooltips.
+          slider.noUiSlider.on('update', function(values, handle) {
+            tooltips[handle].innerHTML = Math.round(values[handle]) + ' Недель';
+          });
+          /**
+           * Select2 initialization
+           **/
+          $(".custom-select").select2({
+            placeholder: "Выберите город",
+            allowClear: true
+          }).on("select2:open", function() {
+            $(".select2-results").mCustomScrollbar({
+              theme: "dark-2"
+            });
+          });
+        });
+      </script>
+      <script src="assets/js/vendor/select2.js"></script>
+      <script src="assets/js/vendor/i18n/ru.js"></script>
+      <script src="assets/js/vendor/jquery.mCustomScrollbar.js"></script>
+      <script src="assets/js/vendor/slick.js"></script>
+    </div>
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -466,69 +532,5 @@
     <script src="assets/js/vendor/jquery.mCustomScrollbar.js"></script>
     <script src="assets/js/vendor/slick.js"></script>
     <script src="assets/js/vendor/custom.js"></script>
-    <script src="assets/js/vendor/nouislider.js"></script>
-    <script>
-      $(function(){
-        /**
-         * Range slider initialization
-         **/
-        var slider = document.getElementById('range');
-        noUiSlider.create(slider, {
-          start: [0, 5], // Handle start position
-          //step: 10, // Slider moves in increments of '10'
-          //margin: 10, // Handles must be more than '20' apart
-          connect: true, // Display a colored bar between the handles
-          behaviour: 'tap-drag', // Move handle on tap, bar is draggable
-          range: { // Slider can select '0' to '100'
-            'min': 0,
-            'max': 5
-          },
-          pips: {
-            mode: 'values',
-            values: [0, 5],
-            density: 4,
-            stepped: true
-          }
-        });
-        var tipHandles = slider.getElementsByClassName('noUi-handle'),
-          tooltips = [];
-          
-        // Add divs to the slider handles.
-        for (var i = 0; i < tipHandles.length; i++) {
-          tooltips[i] = document.createElement('div');
-          tipHandles[i].appendChild(tooltips[i]);
-        }
-        
-        // Add a class for styling
-        tooltips[0].className += 'tip';
-        tooltips[1].className += 'tip';
-        // Add additional markup
-        tooltips[0].innerHTML = '<span></span>';
-        tooltips[1].innerHTML = '<span></span>';
-        // Replace the tooltip reference with the span we just added
-        tooltips[0] = tooltips[0].getElementsByTagName('span')[0];
-        tooltips[1] = tooltips[1].getElementsByTagName('span')[0];
-        
-        // When the slider changes, write the value to the tooltips.
-        slider.noUiSlider.on('update', function(values, handle) {
-          tooltips[handle].innerHTML = Math.round(values[handle]) + ' Недель';
-        });
-        /**
-         * Select2 initialization
-         **/
-        $(".custom-select").select2({
-          placeholder: "Выберите город",
-          allowClear: true
-        }).on("select2:open", function() {
-          $(".select2-results").mCustomScrollbar({
-            theme: "dark-2"
-          });
-        });
-      });
-    </script>
-    <script src="assets/js/vendor/select2.js"></script>
-    <script src="assets/js/vendor/i18n/ru.js"></script>
-    <script src="assets/js/vendor/jquery.mCustomScrollbar.js"></script>
-    <script src="assets/js/vendor/slick.js"></script>
   </body>
 </html>

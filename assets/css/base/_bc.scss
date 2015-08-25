@@ -6,6 +6,7 @@
   margin: 0;
   background-color: transparent;
   border-bottom: 1px solid $border-color;
+  @include border-radius(0);
   &>li {
     &>a {
       color: $base-color;

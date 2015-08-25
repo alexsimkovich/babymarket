@@ -10,6 +10,9 @@
   &.__search-control {
     padding-left: 35px;
   }
+  &.error-control {
+    border-color: $error-color;
+  }
 }
 .form-horizontal {
   .has-feedback {
@@ -52,7 +55,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
   background-position: 0 -15px;
 }
 label.css-label {
-  background-image: url(../../../assets/images/checkbox/checkbox.png);
+  background-image: url("../../../assets/images/checkbox/checkbox.png");
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -60,6 +63,33 @@ label.css-label {
   -ms-user-select: none;
   user-select: none;
 }
-.input-group-addon, .input-group-btn {
+.input-group-addon,
+.input-group-btn {
   width: 13%;
+}
+@media (min-width: $screen-sm-min) {
+  .form-horizontal .control-label {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+}
+.form-group {
+  margin-bottom: 28px;
+}
+.placeholders {
+  position: relative;
+  padding-top: 10px;
+  font-size: 13px;
+  color: $base-color-light;
+  &.with-errors {
+    padding-left: 50px;
+    color: $error-color;
+    &:before {
+      content: url("../../../assets/images/icons/icon-error.png");
+      position: absolute;
+      top: 6px;
+      left: 15px;
+    }
+  }
 }

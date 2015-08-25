@@ -1,0 +1,40 @@
+/**
+* Social links
+**/
+
+.vk {
+  display: inline-block;
+  margin-right: 20px;
+  width: 40px;
+	height: 40px;
+  background: url('../../../assets/images/sprites/social-sprite.png') no-repeat 0 0;
+  transition: none;
+  &:hover,
+  &:focus {
+    background: url('../../../assets/images/sprites/social-sprite.png') no-repeat -187px 0;
+  }
+}
+.fb {
+  display: inline-block;
+  margin-right: 20px;
+  width: 40px;
+	height: 40px;
+  background: url('../../../assets/images/sprites/social-sprite.png') no-repeat -59px 0;
+  transition: none;
+  &:hover,
+  &:focus {
+    background: url('../../../assets/images/sprites/social-sprite.png') no-repeat -246px 0;
+  }
+}
+.tw {
+  display: inline-block;
+  margin-right: 20px;
+  width: 40px;
+	height: 40px;
+  background: url('../../../assets/images/sprites/social-sprite.png') no-repeat -118px 0;
+  transition: none;
+  &:hover,
+  &:focus {
+    background: url('../../../assets/images/sprites/social-sprite.png') no-repeat -305px 0;
+  }
+}
